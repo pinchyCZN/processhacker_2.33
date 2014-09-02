@@ -293,12 +293,15 @@ COLORREF PhGetPrivilegeAttributesColor(
     _In_ ULONG Attributes
     )
 {
+    /*
     if (Attributes & SE_PRIVILEGE_ENABLED_BY_DEFAULT)
         return RGB(0xc0, 0xf0, 0xc0);
     else if (Attributes & SE_PRIVILEGE_ENABLED)
         return RGB(0xe0, 0xf0, 0xe0);
     else
         return RGB(0xf0, 0xe0, 0xe0);
+    */
+    return GetSysColor(COLOR_WINDOW);
 }
 
 static COLORREF NTAPI PhpTokenPrivilegeColorFunction(

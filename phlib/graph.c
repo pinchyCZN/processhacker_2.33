@@ -1149,8 +1149,8 @@ LRESULT CALLBACK PhpGraphWndProc(
                     GetClientRect(hwnd, &rect);
                     rect.right += 2;
                     rect.bottom += 2;
-                    SetDCBrushColor(hdc, RGB(0x8f, 0x8f, 0x8f));
-                    FrameRect(hdc, &rect, GetStockObject(DC_BRUSH));
+                    //SetDCBrushColor(hdc, RGB(0x8f, 0x8f, 0x8f));
+                    //FrameRect(hdc, &rect, GetStockObject(DC_BRUSH));
 
                     ReleaseDC(hwnd, hdc);
                     return 0;
